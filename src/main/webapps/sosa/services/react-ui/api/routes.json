@@ -1,0 +1,13 @@
+{
+  "/openpages/app/jspview/auditScopingApp/helper/ach/header": "/achheader",
+  "/api/v1/tree/ae": "/ae",
+  "/api/v1/tree/library": "/ae",
+  "/openpages/app/jspview/auditScopingApp/aes/audit/audit1": "/aes",
+  "/api/v1/data": "/data",
+  "/api/v1/tree/ae/ae1": "/ae1",
+  "/openpages/app/jspview/auditScopingApp/audit1": "/audit1",
+  "/openpages/app/jspview/auditScopingApp/aes/tree/ae1/1": "/ae1",
+  "/openpages/app/jspview/auditScopingApp/aes/tree/ae2/1": "/ae2",
+  "/openpages/app/jspview/auditScopingApp/aes/tree/ae3/1": "/ae1",
+  "/openpages/app/jspview/auditScopingApp/audit/audit1": "/ae2"
+}

@@ -1,0 +1,7 @@
+/bin/
+/build/
+/node-modules/
+*/node-modules/*
+.idea
+/OPWebApps/out/
+**/node-modules

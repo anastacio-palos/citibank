@@ -1,0 +1,78 @@
+$screen-sm-min: 768px !default;
+
+.flex-container {
+  display: flex;
+
+  &.top {
+    align-items: flex-start;
+  }
+
+  &.stretch {
+    align-items: stretch;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.force-row {
+    > *:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
+  }
+
+  &.flex-title-button {
+    > *:not(:last-child) {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &.fill {
+    justify-content: space-between;
+  }
+
+  @for $grid from 1 through 12 {
+    .flex-#{$grid} {
+      flex-grow: 1;
+      flex-shrink: 1;
+      // The following fix IE11 flexbox bugs:
+      // Reference: https://github.com/philipwalton/flexbugs#flexbug-2
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+
+      // Only set this for row-based grids
+      @media (min-width: $screen-sm-min) {
+        width: auto;
+        flex-basis: ($grid * 100% / 12);
+      }
+    }
+  }
+
+  .flex-lock {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+.self-align-right {
+  align-self: flex-end;
+}

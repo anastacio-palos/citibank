@@ -1,0 +1,26 @@
+{
+  "name": "IssueHeading",
+  "fields": [
+    {
+      "mapTo": "iCAPS Issue ID",
+      "source": {
+        "name": "name",
+        "kind": "grcobject.name"
+      }
+    },
+    {
+      "mapTo": "Validation In IA",
+      "source": {
+        "name": "Citi-Iss:Status",
+        "kind": "grcobject.field"
+      }
+    },
+    {
+      "mapTo": "Reason For Failed Validation",
+      "source": {
+        "name": "Citi-Iss:ResFailVal",
+        "kind": "grcobject.field"
+      }
+    }
+  ]
+}

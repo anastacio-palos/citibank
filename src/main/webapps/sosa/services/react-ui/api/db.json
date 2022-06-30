@@ -1,0 +1,272 @@
+{
+  "achheader": {
+    "helpertitle": "Audit Scoping Helper"
+  },
+  "audit1": {
+    "key": "1",
+    "title": "Audit 1",
+    "description": "This is the audit"
+  },
+  "profile": {
+    "title": "typicode"
+  },
+  "ae": [
+    {
+      "key": "1",
+      "title": "<div dangerouslySetInnerHTML={ {__html: Process-1} } />",
+      "children": [
+        {
+          "key": "1.1",
+          "title": "Risk"
+        },
+        {
+          "key": "1.2",
+          "title": "Issue",
+          "children": [
+            {
+              "key": "1.2.1",
+              "title": "child 1.2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "2",
+      "title": "Resource-2",
+      "children": [
+        {
+          "key": "2.1",
+          "title": "child 2.1"
+        }
+      ]
+    }
+  ],
+  "aes": [
+    {
+      "key": "ae2",
+      "title": "Audit Entity 1",
+      "description": "AE1 description"
+    }
+  ],
+  "ae1": {
+    "key": "ae1",
+    "title": "Audit Entity 1",
+    "description": "AE1 description",
+    "children": [
+      {
+        "key": "0-0-0-0",
+        "title": "Process 0 0 0 0",
+        "description": "Process1 desc",
+        "type": "Process",
+        "stp": true,
+        "checked": true,
+        "check": true,
+        "children": []
+      },
+      {
+        "key": "pkey1",
+        "title": "Process1",
+        "description": "Process1 desc",
+        "type": "Process",
+        "stp": true,
+        "checked": true,
+        "check": true,
+        "children": [
+          {
+            "key": "rkey1",
+            "title": "Risk1",
+            "description": "Risk1 des",
+            "type": "Risk",
+            "stp": true,
+            "children": []
+          },
+          {
+            "key": "rkey2",
+            "title": "Risk2",
+            "description": "Risk2 des",
+            "type": "Risk",
+            "stp": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "key": "pkey2",
+        "title": "Process2",
+        "description": "Process2 desc",
+        "type": "Process",
+        "stp": false,
+        "children": [
+          {
+            "key": "rkey21",
+            "title": "Risk21",
+            "description": "Risk21 des",
+            "type": "Risk",
+            "stp": false,
+            "children": [
+              {
+                "key": "ctrl21",
+                "title": "Control1",
+                "description": "control21 des",
+                "type": "Control",
+                "stp": true,
+                "children": []
+              },
+              {
+                "key": "ctrl22",
+                "title": "Control2",
+                "description": "control22 des",
+                "type": "Control",
+                "stp": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "key": "rkey22",
+            "title": "Risk22",
+            "description": "Risk22 des",
+            "type": "Risk",
+            "stp": true,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "ae2": [
+    {
+      "key": "P1",
+      "title": "Process 0 0 0 1",
+      "description": "Process1 desc",
+      "type": "Process",
+      "processed": false,
+      "source": "s1",
+      "ae": "ae1",
+      "auditObjRefID": "111111",
+      "hierarchy": [
+        "P1"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "Risk1",
+      "title": "Risk1",
+      "description": "Risk1 des",
+      "type": "Risk",
+      "processed": false,
+      "source": "s2",
+      "hierarchy": [
+        "P1",
+        "Risk1"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "Risk2",
+      "title": "Risk1",
+      "description": "Risk1 des",
+      "type": "Risk",
+      "processed": false,
+      "source": "s3",
+      "hierarchy": [
+        "P1",
+        "Risk2"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "Risk3",
+      "title": "Risk1",
+      "description": "Risk1 des",
+      "type": "Risk",
+      "processed": false,
+      "source": "s4",
+      "hierarchy": [
+        "P1",
+        "Risk3"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "Control1",
+      "title": "Control1",
+      "description": "Control des",
+      "type": "Risk",
+      "processed": false,
+      "source": "s5",
+      "hierarchy": [
+        "P1",
+        "Risk3",
+        "Control1"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "Control2",
+      "title": "Ctrl2",
+      "description": "Ctroll des",
+      "type": "Risk",
+      "processed": false,
+      "source": "s6",
+      "hierarchy": [
+        "P1",
+        "Risk3",
+        "Control2"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "Control3",
+      "title": "Ctrl2",
+      "description": "Control des",
+      "type": "Risk",
+      "source": "s7",
+      "hierarchy": [
+        "P1",
+        "Risk3",
+        "Control3"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "Risk4",
+      "title": "Risk1",
+      "description": "Risk1 des",
+      "type": "Risk",
+      "source": "s8",
+      "hierarchy": [
+        "P1",
+        "Risk4"
+      ],
+      "scope": "In"
+    },
+    {
+      "key": "P2",
+      "title": "Process 0 0 0 2",
+      "description": "Process2 desc",
+      "type": "Process",
+      "processed": true,
+      "source": "s9",
+      "ae": "ae1",
+      "hierarchy": [
+        "P2"
+      ],
+      "scope": "Out"
+    },
+    {
+      "key": "P3",
+      "title": "Process 0 0 0 3",
+      "description": "Process3 desc",
+      "type": "Process",
+      "processed": true,
+      "source": "s10",
+      "ae": "ae1",
+      "hierarchy": [
+        "P3"
+      ],
+      "scope": "Out"
+    }
+  ]
+}

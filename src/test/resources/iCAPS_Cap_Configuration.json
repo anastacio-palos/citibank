@@ -1,0 +1,21 @@
+{
+  "name": "ICapsNewCAP",
+  "fields": [
+    {
+      "name": "CAP_ID",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Cap:Name"
+    },
+    {
+      "name": "CAP_Description",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-CAP:APDescription"
+    }
+  ]
+}

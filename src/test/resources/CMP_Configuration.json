@@ -1,0 +1,165 @@
+{
+  "name": "CMPNewUser",
+  "fields": [
+    {
+      "name": "soeid",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9]*$"
+      },
+      "mapTo": "username"
+    },
+    {
+      "name": "firstname",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z]*$"
+      },
+      "mapTo": "firstname"
+    },
+    {
+      "name": "lastname",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z]*$"
+      },
+      "mapTo": "lastname"
+    },
+    {
+      "name": "profile",
+      "defaultValue": "OpenPages RCM Master",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9\\s]*$",
+        "constraints": [
+          {
+            "constraintKey": "Profiles",
+            "constraintRegistryProperty": "/OpenPages/Custom Deliverables/Interfaces/CMP/validProfiles",
+            "constraintType": "List<?>"
+          }
+        ]
+      },
+      "mapTo": "profile"
+    },
+    {
+      "name": "email",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^(.+)@(.+)$"
+      },
+      "mapTo": "email"
+    },
+    {
+      "name": "action",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[C|c|M|m|D|d]{1}$"
+      },
+      "mapTo": "action"
+    },
+    {
+      "name": "roles_add",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "Roles",
+            "constraintRegistryProperty": "/OpenPages/Custom Deliverables/Interfaces/CMP/validRoles",
+            "constraintType": "Map<?,?>"
+          }
+        ]
+      },
+      "mapTo": "add_groups"
+    },
+    {
+      "name": "removeroles",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "Roles"
+          }
+        ]
+      },
+      "mapTo": "remove_groups"
+    },
+    {
+      "name": "addcountry",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "Countries",
+            "constraintRegistryProperty": "/OpenPages/Custom Deliverables/Interfaces/CMP/validCountries",
+            "constraintType": "List<?>"
+          }
+        ]
+      },
+      "mapTo": "add_groups_country"
+    },
+    {
+      "name": "removecountry",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "Countries"
+          }
+        ]
+      },
+      "mapTo": "remove_groups_country"
+    },
+    {
+      "name": "add_lead_product_team",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "LeadProductTeam",
+            "constraintRegistryProperty": "/OpenPages/Custom Deliverables/Interfaces/CMP/lead_team_valid_entities",
+            "constraintType": "Query-Map<?,?>"
+          }
+        ]
+      },
+      "mapTo": "add_role_assignments"
+    },
+    {
+      "name": "remove_lead_product_team",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "LeadProductTeam"
+          }
+        ]
+      },
+      "mapTo": "remove_role_assignments"
+    },
+    {
+      "name": "add_product_function_team",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "ProductFunctionTeam",
+            "constraintRegistryProperty": "/OpenPages/Custom Deliverables/Interfaces/CMP/product_function_valid_entities",
+            "constraintType": "Query-Map<?,?>"
+          }
+        ]
+      },
+      "mapTo": "add_auditor_group_assignments"
+    },
+    {
+      "name": "remove_product_function_team",
+      "maxOccurs": "unbounded",
+      "restriction": {
+        "constraints": [
+          {
+            "constraintKey": "ProductFunctionTeam"
+          }
+        ]
+      },
+      "mapTo": "remove_auditor_group_assignments"
+    }
+  ]
+}

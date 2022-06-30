@@ -1,0 +1,344 @@
+{
+  "name": "ICapsNewIssue",
+  "fields": [
+    {
+      "name": "Issue_ID",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_]*$"
+      },
+      "mapTo": "name"
+    },
+    {
+      "name": "Issue_Source_Level_2",
+      "mapTo": "Citi-Iss:SrcLvl2"
+    },
+    {
+      "name": "Issue_Owner-Managed_Segment_ID",
+      "mapTo": "Citi-iCAPSIss:iCAPSOwnerMngSegmentID"
+    },
+    {
+      "name": "Exam_ID",
+      "minOccurs": "1",
+      "mapTo": "Citi-iCAPSIss:iCAPSExamID"
+    },
+    {
+      "name": "Exam_Name",
+      "mapTo": "Citi-iCAPSIss:iCAPSExamName"
+    },
+    {
+      "name": "Examining_Agency",
+      "mapTo": "Citi-iCAPSIss:iCAPSExamAgency"
+    },
+    {
+      "name": "Commitment_Agency",
+      "mapTo": "Citi-iCAPSIss:iCAPSCommitAgency"
+    },
+    {
+      "name": "Enforcement_Agency_Name",
+      "mapTo": "Citi-iCAPSIss:iCAPSEnforceAgency"
+    },
+    {
+      "name": "RET_Issue_Classification",
+      "mapTo": "Citi-iCAPSIss:iCAPSRETClass"
+    },
+    {
+      "name": "Repeat_MRA",
+      "mapTo": "Citi-iCAPSIss:iCAPSRepeatMRA"
+    },
+    {
+      "name": "Issue_DSMT_Assigned_Managed_Segment_Attributes",
+      "mapTo": "Citi-iCAPSIss:iCAPSMngSeg"
+    },
+    {
+      "name": "Issue_DSMT_Assigned_Managed_Geography_Attributes",
+      "mapTo": "Citi-iCAPSIss:iCAPSMngGeo"
+    },
+    {
+      "name": "Issue_DSMT_Assigned_Legal_Vehicle_Attributes",
+      "mapTo": "Citi-iCAPSIss:iCAPSLegVeh"
+    },
+    {
+      "name": "Issue_DSMT_Assigned_Function_Attributes",
+      "mapTo": "Citi-iCAPSIss:iCAPSAssignedFunc"
+    },
+    {
+      "name": "Issue_Name",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "description"
+    },
+    {
+      "name": "Issue_Description",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "description"
+    },
+    {
+      "name": "Enforcement_Action_Title",
+      "mapTo": "Citi-iCAPSIss:iCAPSEnfActTitle"
+    },
+    {
+      "name": "Issue_Create_Date",
+      "mapTo": "Citi-iCAPSIss:iCAPSCreateDate"
+    },
+    {
+      "name": "Issue_Identification_Date",
+      "mapTo": "Citi-iCAPSIss:iCAPSIdentDate"
+    },
+    {
+      "name": "Issue_Owner",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:Assignee"
+    },
+    {
+      "name": "Audit_Owner",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:AudOwner"
+    },
+    {
+      "name": "Audit_Controller",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:AudContlr"
+    },
+    {
+      "name": "Issue_Coordinators",
+      "mapTo": "Citi-iCAPSIss:iCAPSCoordinators"
+    },
+    {
+      "name": "Lead_Auditor",
+      "mapTo": "Citi-Iss:LeadAud"
+    },
+    {
+      "name": "Issue_Activation_Date",
+      "mapTo": "Citi-iCAPSIss:ActivationDate"
+    },
+    {
+      "name": "Issue_Closure_Date",
+      "mapTo": "Citi-iCAPSIss:ClosureDate"
+    },
+    {
+      "name": "Issue_Action_Comment",
+      "mapTo": "Citi-Iss:ActCom"
+    },
+    {
+      "name": "Issue_Status",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:Status"
+    },
+    {
+      "name": "Issue_Detailed_Status",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:IssDetStatus"
+    },
+    {
+      "name": "Issue_Source_Level_1",
+      "mapTo": "Citi-iCAPSIss:Issue Source Level 1"
+    },
+    {
+      "name": "Source_System",
+      "mapTo": "Citi-iCAPSIss:Source System"
+    },
+    {
+      "name": "Issue_Severity_Rating",
+      "mapTo": "Citi-iCAPSIss:iCAPSSevRating"
+    },
+    {
+      "name": "Issue_Type_Level_1",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:Issue Type"
+    },
+    {
+      "name": "Issue_Type_Level_2",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:Risk Issue Type - Level 2"
+    },
+    {
+      "name": "Issue_Type_Level_3",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:Risk Issue Type - Level 3"
+    },
+    {
+      "name": "Issue_Type_Level_4",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Iss:Risk Issue Type - Level 4"
+    },
+    {
+      "name": "Initial_Issue_Validation_Target_Date",
+      "mapTo": "Citi-iCAPSIss:InitValTargetDate"
+    },
+    {
+      "name": "Revised_Issue_Validation_Target_Date",
+      "mapTo": "Citi-iCAPSIss:RevisedValTargetDate"
+    },
+    {
+      "name": "Validated_by_IA",
+      "mapTo": "Ignored"
+    },
+    {
+      "name": "Re-Opened_Issue_Count",
+      "mapTo": "Citi-Iss:NumReOpn"
+    },
+    {
+      "name": "Re-Opened_by_Regulator_Count",
+      "mapTo": "Citi-Iss:ReOpnRegCnt"
+    },
+    {
+      "name": "Is_Issue_Rejected_by_IA_or_Regulator",
+      "mapTo": "Citi-iCAPSIss:iCAPSRejectedIAorReg"
+    },
+    {
+      "name": "IA_Validation_Date",
+      "mapTo": "Citi-iCAPSIss:iCAPSIAValDate"
+    },
+    {
+      "name": "Issue_Current_Target_Date",
+      "mapTo": "Citi-Iss:Due Date"
+    },
+    {
+      "name": "Issue_Re-opened_Date",
+      "mapTo": "Citi-Iss:IssReOpnDt"
+    },
+    {
+      "name": "Business_Completion_Date",
+      "mapTo": "Citi-Iss:BusCompDt"
+    },
+    {
+      "name": "Issue_Retarget_Rationale_Concatenated",
+      "mapTo": "Citi-iCAPSIss:iCAPSRetargetRat"
+    },
+    {
+      "name": "Regulator_Closure_Required",
+      "mapTo": "Citi-iCAPSIss:iCAPSRegCloseReq"
+    },
+    {
+      "name": "Issue_Business_Target_Date",
+      "mapTo": "Citi-iCAPSIss:iCAPSBusTargetDate"
+    },
+    {
+      "name": "Revised_Issue_Business_Target_Date",
+      "mapTo": "Citi-iCAPSIss:iCAPSRevBusTargetDate"
+    },
+    {
+      "name": "Number_of_Validation_Days",
+      "mapTo": "Citi-iCAPSIss:iCAPSValidationDays"
+    },
+    {
+      "name": "Reg_Finding_ID_Concatenated",
+      "mapTo": "Citi-iCAPSIss:iCAPSRegFindingID"
+    },
+    {
+      "name": "Regulator_Re-Open_Date",
+      "mapTo": "Citi-Iss:DtRegReOpn"
+    },
+    {
+      "name": "Validation_Required",
+      "mapTo": "Citi-iCAPSIss:iCAPSValReq"
+    },
+    {
+      "name": "Enforcement_Type",
+      "mapTo": "Citi-iCAPSIss:iCAPSEnfType"
+    },
+    {
+      "name": "Commitment_Title",
+      "mapTo": "Citi-iCAPSIss:iCAPSCommitTitle"
+    },
+    {
+      "name": "Issue_Country",
+      "mapTo": "Citi-iCAPSIss:iCAPSIssCountry"
+    },
+    {
+      "name": "Number_Of_Issue_Retargets",
+      "mapTo": "Citi-iCAPSIss:iCAPSNumRetargets"
+    },
+    {
+      "name": "Is_Risk_Primary",
+      "mapTo": "Citi-iCAPSIss:iCAPSRiskPrimary"
+    },
+    {
+      "name": "MGE",
+      "mapTo": "Citi-iCAPSIss:iCAPSMGE"
+    },
+    {
+      "name": "Assessment_unit",
+      "mapTo": "Citi-iCAPSIss:iCAPSAssessUnit"
+    },
+    {
+      "name": "Activity_Level_1",
+      "mapTo": "Citi-Iss-Proc:GRC - Activity L1"
+    },
+    {
+      "name": "Activity_Level_2",
+      "mapTo": "Citi-Iss-Proc:GRC - Activity L2"
+    },
+    {
+      "name": "Activity_Level_3",
+      "mapTo": "Citi-Iss-Proc:GRC - Activity L3"
+    },
+    {
+      "name": "Risk_Level_1",
+      "mapTo": "Citi-GRC:GRC - Risk L1"
+    },
+    {
+      "name": "Risk_Level_2",
+      "mapTo": "Citi-GRC:GRC - Risk L2"
+    },
+    {
+      "name": "Risk_Level_3",
+      "mapTo": "Citi-GRC:GRC - Risk L3"
+    },
+    {
+      "name": "Risk_Level_4",
+      "mapTo": "Citi-GRC:GRC - Risk L4"
+    },
+    {
+      "name": "Control_Level_1",
+      "mapTo": "Citi-Iss-Ctl:GRCCtlL1"
+    },
+    {
+      "name": "Primary_Root_Cause_Level_1",
+      "mapTo": "Citi-Iss:Root Cause Type"
+    },
+    {
+      "name": "Primary_Root_Cause_Level_2",
+      "mapTo": "Citi-Iss:Risk Issue Root Cause - Level 2"
+    },
+    {
+      "name": "ListOfCaps",
+      "maxOccurs": "unbounded",
+      "type": "ICapsNewCAP",
+      "mapTo": "ListOfCaps"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "ICapsNewIssue",
+  "fields": [
+    {
+      "name": "Issue_ID",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_]*$"
+      },
+      "mapTo": "id"
+    },
+    {
+      "name": "Issue_Name",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "name"
+    },
+    {
+      "name": "Issue_Description",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "description"
+    },
+    {
+      "name": "ListOfCaps",
+      "maxOccurs": "unbounded",
+      "type": "ICapsNewCAP",
+      "mapTo": "caps"
+    }
+  ]
+}

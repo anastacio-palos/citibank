@@ -1,0 +1,439 @@
+{
+  "newDsmtLinks": {
+    "objectID": "22518",
+    "objectType": "AuditableEntity",
+    "objectStatus": null,
+    "objectTypeLabel": "Auditable Entity",
+    "objRegistrySetting": "/OpenPages/Custom Deliverables/Helper App/DSMT Link App/Auditable Entity",
+    "dsmtSearchInfo": null,
+    "helperObjectContentInfo": {
+      "contentBody": "",
+      "contentHeader": "",
+      "generalDetails": [
+        {
+          "fieldName": "Object ID",
+          "fieldValue": "E00000441.txt",
+          "editable": false,
+          "required": false
+        },
+        {
+          "fieldName": "Title",
+          "fieldValue": "Test Auditable Entity",
+          "editable": false,
+          "required": false
+        },
+        {
+          "fieldName": "Entity Type",
+          "fieldValue": "Risk Based",
+          "editable": false,
+          "required": false
+        },
+        {
+          "fieldName": "Entity Sub-Type",
+          "fieldValue": "Risk Based",
+          "editable": false,
+          "required": false
+        }
+      ]
+    },
+    "helperHeaderInfo": null,
+    "headerInfo": {
+      "headerTitle": "DSMT Helper",
+      "userInfo": {
+        "displayName": "OpenPagesAdministrator",
+        "displayImage": null
+      },
+      "aboutInfo": {
+        "title": "Auditable Entity DSMT Helper",
+        "version": "1.0",
+        "licenseInfo": "Licensed Materials – Property of IBM Corp. © Copyright IBM Corporation and other(s) 2003, 2021. IBM, the IBM logo, ibm.com and OpenPages are trademarks or registered trademarks of International Business Machines Corp., registered in many jurisdictions worldwide. A current list of IBM trademarks is available on the Web at http: //www.ibm.com/legal/copytrade.shtml. Built on Eclipse is a trademark of Eclipse Foundation, Inc. Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates. Other product and service names might be trademarks of IBM or other companies. This Program is licensed under the terms of the license agreement accompanying the Program. This license agreement may be either located in a Program directory folder or library identified as \"License\" or \"Non_IBM_License\", if applicable, or provided as a printed license agreement. Please read the agreement carefully before using the Program. By using the Program you agree to these terms.",
+        "helperInfo": "On every helper execution the user will see:\n1. Auditable Entity Information.\n2. Scoped IN DSMT’s (If the user never ran the helper or never created any DSMT Links for this AE before, then no DSMT Link data will be displayed.\nIf the user created DSMT Links for the AE in previous run, then those DSMT will be displayed in this section. )"
+      },
+      "hideSearch": true,
+      "hideUserIcon": false,
+      "hideAppSwitcher": true,
+      "hidNotificationBell": true
+    },
+    "auditableEntityNodeLevelInfo": {
+      "managdSegNodeLevels": null,
+      "manageGeoNodeLevels": null
+    },
+    "dsmtLinkUpdateInfo": null,
+    "newQuadsInfo": null,
+    "existingQuadsInfo": null,
+    "availableQuadsInfo": null,
+    "associateNewDSMTInfoList": null,
+    "existingDSMTLinksGridInfo": {
+      "rows": [
+        {
+          "hasChildren": true,
+          "id": "row-1",
+          "name": "DSMTLink_281",
+          "type": null,
+          "link": "",
+          "scope": "Pending Addition",
+          "status": null,
+          "expanded": false,
+          "selected": false,
+          "children": [
+            {
+              "hasChildren": false,
+              "id": "child-row-1",
+              "name": "DSMTLink_283",
+              "type": null,
+              "link": "",
+              "scope": "Pending Addition",
+              "status": null,
+              "expanded": false,
+              "selected": false
+            }
+          ]
+        },
+        {
+          "hasChildren": false,
+          "id": "row-2",
+          "name": "DSMTLink_282",
+          "type": null,
+          "link": "",
+          "scope": "Pending Addition",
+          "status": null,
+          "expanded": false,
+          "selected": false
+        }
+      ],
+      "headers": [
+        {
+          "key": "name",
+          "header": "Object ID"
+        },
+        {
+          "key": "type",
+          "header": "Type"
+        },
+        {
+          "key": "status",
+          "header": "Status"
+        },
+        {
+          "key": "scope",
+          "header": "Scope"
+        }
+      ]
+    }
+  },
+  "auditHelper": {
+    "objectID": "22256",
+    "objectType": "AuditProgram",
+    "objectStatus": "Draft",
+    "objectTypeLabel": "Audit",
+    "objRegistrySetting": "/OpenPages/Custom Deliverables/Helper App/DSMT Link App/Audit",
+    "dsmtSearchInfo": null,
+    "helperObjectContentInfo": {
+      "contentBody": "",
+      "contentHeader": "",
+      "generalDetails": [
+        {
+          "fieldName": "Object ID",
+          "fieldValue": "AUD_00164.txt",
+          "editable": false,
+          "required": false
+        },
+        {
+          "fieldName": "Title",
+          "fieldValue": "Title is AUD 00164",
+          "editable": false,
+          "required": false
+        }
+      ]
+    },
+    "helperHeaderInfo": null,
+    "headerInfo": {
+      "headerTitle": "DSMT Helper",
+      "userInfo": {
+        "displayName": "OpenPagesAdministrator",
+        "displayImage": null
+      },
+      "aboutInfo": {
+        "title": "Audit DSMT Helper",
+        "version": "1.0",
+        "licenseInfo": "Licensed Materials – Property of IBM Corp. © Copyright IBM Corporation and other(s) 2003, 2021.",
+        "helperInfo": "Detailed description of what the helper does"
+      },
+      "hideSearch": true,
+      "hideUserIcon": false,
+      "hideAppSwitcher": true,
+      "hidNotificationBell": true
+    },
+    "auditableEntityNodeLevelInfo": null,
+    "dsmtLinkUpdateInfo": null,
+    "newQuadsInfo": null,
+    "existingQuadsInfo": null,
+    "availableQuadsInfo": null,
+    "associateNewDSMTInfoList": null,
+    "existingDSMTLinksGridInfo": {
+      "rows": [
+        {
+          "hasChildren": true,
+          "id": "row-1",
+          "disableInfo": null,
+          "name": "E00000423",
+          "type": "Risk Based",
+          "link": null,
+          "scope": null,
+          "status": "Draft",
+          "baseId": null,
+          "active": null,
+          "description": "BE2",
+          "resourceId": "22252",
+          "children": [
+            {
+              "hasChildren": false,
+              "id": "row-1-child-1",
+              "disableInfo": "",
+              "name": "Copy of DSMTLink_302",
+              "type": "Home",
+              "link": "",
+              "scope": "In",
+              "status": null,
+              "baseId": "27732",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "27735",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            },
+            {
+              "hasChildren": false,
+              "id": "row-1-child-2",
+              "disableInfo": "",
+              "name": "Copy of DSMTLink_301",
+              "type": "Home",
+              "link": "",
+              "scope": "In",
+              "status": null,
+              "baseId": "27731",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "27736",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            }
+          ],
+          "expanded": false,
+          "selected": false,
+          "disabled": false
+        },
+        {
+          "hasChildren": true,
+          "id": "row-2",
+          "disableInfo": null,
+          "name": "E00000401",
+          "type": "Risk Based",
+          "link": null,
+          "scope": "In",
+          "status": "Draft",
+          "baseId": null,
+          "active": null,
+          "description": "E00000401",
+          "resourceId": "18182",
+          "children": [
+            {
+              "hasChildren": false,
+              "id": "row-2-child-1",
+              "disableInfo": "",
+              "name": "DSMTLink_303",
+              "type": "Home",
+              "link": "",
+              "scope": "In",
+              "status": null,
+              "baseId": "27733",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "27737",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            },
+            {
+              "hasChildren": false,
+              "id": "row-2-child-2",
+              "disableInfo": "",
+              "name": "DSMTLink_304",
+              "type": "Home",
+              "link": "",
+              "scope": "In",
+              "status": null,
+              "baseId": "27734",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "27738",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            }
+          ],
+          "expanded": false,
+          "selected": false,
+          "disabled": false
+        }
+      ],
+      "headers": [
+        {
+          "key": "name",
+          "header": "Object ID"
+        },
+        {
+          "key": "type",
+          "header": "Type"
+        },
+        {
+          "key": "status",
+          "header": "Status"
+        },
+        {
+          "key": "scope",
+          "header": "Scope"
+        }
+      ]
+    },
+    "newDSMTLinksGridInfo": {
+      "rows": [
+        {
+          "hasChildren": true,
+          "id": "row-1",
+          "disableInfo": null,
+          "name": "E00000323",
+          "type": "Risk Based",
+          "link": null,
+          "scope": null,
+          "status": "Active",
+          "baseId": null,
+          "active": null,
+          "description": "test",
+          "resourceId": "16329",
+          "children": [
+            {
+              "hasChildren": false,
+              "id": "row-1-child-1",
+              "disableInfo": "",
+              "name": "Copy of DSMTLink_123",
+              "type": "Impacted",
+              "link": null,
+              "scope": "In",
+              "status": null,
+              "baseId": "16363",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "16363",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            },
+            {
+              "hasChildren": false,
+              "id": "row-1-child-2",
+              "disableInfo": "",
+              "name": "DSMTLink_021",
+              "type": "Home",
+              "link": null,
+              "scope": "In",
+              "status": null,
+              "baseId": "16364",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "16364",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            }
+          ],
+          "expanded": false,
+          "selected": false,
+          "disabled": false
+        },
+        {
+          "hasChildren": true,
+          "id": "row-2",
+          "disableInfo": null,
+          "name": "E00000361",
+          "type": "Risk Based",
+          "link": null,
+          "scope": null,
+          "status": "Pending Active",
+          "baseId": null,
+          "active": null,
+          "description": "test",
+          "resourceId": "17002",
+          "children": [
+            {
+              "hasChildren": false,
+              "id": "row-2-child-1",
+              "disableInfo": "",
+              "name": "DSMTLink_021",
+              "type": "Home",
+              "link": null,
+              "scope": "In",
+              "status": null,
+              "baseId": "3855",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "3855",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            },
+            {
+              "hasChildren": false,
+              "id": "row-2-child-2",
+              "disableInfo": "",
+              "name": "DSMTLink_123",
+              "type": "Impacted",
+              "link": null,
+              "scope": "In",
+              "status": null,
+              "baseId": "16188",
+              "active": "Yes",
+              "description": null,
+              "resourceId": "16188",
+              "children": null,
+              "expanded": false,
+              "selected": false,
+              "disabled": false
+            }
+          ],
+          "expanded": false,
+          "selected": false,
+          "disabled": false
+        }
+      ],
+      "headers": [
+        {
+          "key": "name",
+          "header": "Object ID"
+        },
+        {
+          "key": "type",
+          "header": "Type"
+        },
+        {
+          "key": "status",
+          "header": "Status"
+        },
+        {
+          "key": "scope",
+          "header": "Scope"
+        }
+      ]
+    },
+    "availableDSMTLinksGridInfo": null
+  }
+}

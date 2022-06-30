@@ -1,0 +1,15 @@
+{
+  "Issue_ID":"1234567",
+  "Issue_Name":"Nombre del Issue",
+  "Issue_Description": "Descripcion del Issue",
+  "ListOfCaps":[
+    {
+      "CAP_ID":"CAP1",
+      "CAP_Description":"Nombre del CAP 1"
+    },
+    {
+      "CAP_ID":"CAP2",
+      "CAP_Description":"Nombre del CAP 2"
+    }
+  ]
+}

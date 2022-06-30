@@ -1,0 +1,108 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ *
+ * OpenPages GRC Platform (PID: 5725-D51)
+ *
+ * © Copyright IBM Corporation  2021 - CURRENT_YEAR. All Rights Reserved.
+ *
+ * US Government Users Restricted Rights- Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ *******************************************************************************/
+@import '../../vars.scss';
+
+/**--------------------------------------------------------------------
+   style rc-tree to more Carbon-like
+------------------------------------------------------------------**/
+
+.op-example-tree {
+  .rc-tree {
+    margin: 0;
+    padding: 5px;
+
+    .rc-tree-node-selected {
+      background-color: $selected-ui;
+      box-shadow: none;
+    }
+
+    .rc-tree-treenode {
+      height: 25px;
+
+      .rc-tree-node-content-wrapper {
+        display: inline-block;
+        padding: 1px 3px 0 0;
+        margin: 0;
+        cursor: pointer;
+        line-height: 20px;
+        text-decoration: none;
+        vertical-align: top;
+
+        .rc-tree-title {
+          font-size: 0.875rem;
+        }
+      }
+
+      .rc-tree-switcher {
+        line-height: 10px;
+        height: $spacing-04;
+        width: $spacing-04;
+        background-image: none;
+        margin: 0 $spacing-03;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          margin-top: -$spacing-01;
+          color: $ui-05;
+        }
+
+        &.rc-tree-switcher_close::after {
+          content: '+';
+          margin-left: 0.02rem;
+        }
+
+        &.rc-tree-switcher_open::after {
+          content: '-';
+          margin-left: 0.08rem;
+        }
+      }
+
+      .rc-tree-checkbox {
+        height: $layout-01;
+        width: $layout-01;
+        border: 1px solid $ui-04;
+        background-image: none;
+        margin: 0 $spacing-03;
+        position: relative;
+
+        &.rc-tree-checkbox-checked {
+          background-color: $interactive-02;
+          border-color: $interactive-02;
+
+          // Copied from the Carbon checkbox css and tweaked a little
+          &::after {
+            box-sizing: border-box;
+            content: ' ';
+            width: 9px;
+            height: 5px;
+            background: none;
+            border-left: 2px solid $field-02;
+            border-bottom: 2px solid $field-02;
+            transform: scale(1) rotate(-45deg);
+            position: absolute;
+            left: 0.2rem;
+            top: 0.4rem;
+            margin-top: -0.1875rem;
+          }
+        }
+
+        &:focus {
+          border-width: 3px;
+          border-color: $interactive-01;
+          height: 1.25rem;
+          width: 1.25rem;
+          margin: 0 calc(#{$spacing-03} - 2px);
+        }
+      }
+    }
+  }
+}

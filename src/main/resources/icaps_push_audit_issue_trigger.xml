@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trigger-definitions>
+	<!-- Evaluate Issue Any Property Change Rule Trigger-->
+	<grcTrigger name="Push to iCAPS - Audit Issue Change Rules" event="create.object" position="POST">
+		<rule class="com.ibm.openpages.ext.trigger.icaps.rule.AuditIssuePropertyChangeRule">
+			<attribute name="content.type" value="Citi_Iss" />
+			<attribute name="ignored.fields" value="Citi-Iss:ICAPSIssID, Citi-iCAPSIss:iCAPSErr, Citi-iCAPSIss:iCAPSErrMessage, Citi-Iss:IssAg, Citi-Iss:IssVal, Citi-iCAPSIss:iCAPSResponse,Citi-Iss:DaysInAwIssValSts,Citi-Iss:IAValDaysRem" />
+			<attribute name="ignored.status" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/trigger/Ignored Status" />
+			<attribute name="disable.trigger" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/trigger/Disable Issue Trigger" />
+			<attribute name="log.filename" value="AuditIssuePropertyChangeRule.log" />
+		</rule>
+		<eventHandler class="com.ibm.openpages.ext.trigger.icaps.handler.AuditIssueHandler">
+			<attribute name="log.enable.debug.mode" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/enable_debug_mode" />
+			<attribute name="log.file.path" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_path" />
+			<attribute name="log.file.size" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_size" />
+			<attribute name="log.level" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_level" />
+		</eventHandler>
+		​
+	</grcTrigger>
+	​
+	<grcTrigger name="Push to iCAPS - Audit Issue Change Rules" event="update.object" position="POST">
+		<rule class="com.ibm.openpages.ext.trigger.icaps.rule.AuditIssuePropertyChangeRule">
+			<attribute name="content.type" value="Citi_Iss" />
+			<attribute name="ignored.fields" value="Citi-Iss:ICAPSIssID, Citi-iCAPSIss:iCAPSErr, Citi-iCAPSIss:iCAPSErrMessage, Citi-Iss:IssAg, Citi-Iss:IssVal, Citi-iCAPSIss:iCAPSResponse,Citi-Iss:DaysInAwIssValSts,Citi-Iss:IAValDaysRem" />
+			<attribute name="ignored.status" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/trigger/Ignored Status" />
+			<attribute name="disable.trigger" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/trigger/Disable Issue Trigger" />
+			<attribute name="log.filename" value="AuditIssuePropertyChangeRule.log" />
+		</rule>
+		<eventHandler class="com.ibm.openpages.ext.trigger.icaps.handler.AuditIssueHandler">
+			<attribute name="log.enable.debug.mode" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/enable_debug_mode" />
+			<attribute name="log.file.path" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_path" />
+			<attribute name="log.file.size" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_size" />
+			<attribute name="log.level" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_level" />
+		</eventHandler>
+	</grcTrigger>
+	<!-- Evaluate Cap Any Property Change Rule Trigger-->
+	<grcTrigger name="Push to iCAPS - Audit Issue increment changeCounter on the CAP" event="create.object" position="POST">
+		<rule class="com.ibm.openpages.ext.trigger.icaps.rule.NotRegulatoryIssueSrcRule">
+			<attribute name="content.type" value="Citi_CAP" />
+			<attribute name="ignored.fields" value="Citi-iCAPSCAP:changeCounter, Citi-iCAPSCAP:iCAPSResponse, Citi-CAP:ICapsCAPID, Citi-iCAPSCAP:iCAPSErr, Citi-iCAPSCAP:iCAPSErrMessage, Citi-CAP:Action Plan Aging, Citi-CAP:CAPVal, Citi-ShIssue:RemPlnFin, Citi-ShIssue:Issue Status, Citi-ShIssue:CurrIssDueDate, Citi-CAP:Issue Source,Citi-CAP:Days in Awaiting Validation Status" />
+			<attribute name="disable.trigger" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/trigger/Disable CAP Change Counter Create Trigger" />
+			<attribute name="log.filename" value="ChangeCounterRule.log" />
+		</rule>
+		<eventHandler class="com.ibm.openpages.ext.trigger.icaps.handler.CAPChangeCounterHandler">
+			<attribute name="log.enable.debug.mode" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/enable_debug_mode" />
+			<attribute name="log.file.path" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_path_cap_count" />
+			<attribute name="log.file.size" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_size" />
+			<attribute name="log.level" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_level" />
+		</eventHandler>
+	</grcTrigger>
+	​
+	<grcTrigger name="Push to iCAPS - Audit Issue increment changeCounter on the CAP" event="update.object" position="POST">
+		<rule class="com.ibm.openpages.ext.trigger.icaps.rule.NotRegulatoryIssueSrcRule">
+			<attribute name="content.type" value="Citi_CAP" />
+			<attribute name="ignored.fields" value="Citi-iCAPSCAP:changeCounter, Citi-iCAPSCAP:iCAPSResponse, Citi-CAP:ICapsCAPID, Citi-iCAPSCAP:iCAPSErr, Citi-iCAPSCAP:iCAPSErrMessage, Citi-CAP:Action Plan Aging, Citi-CAP:CAPVal, Citi-ShIssue:RemPlnFin, Citi-ShIssue:Issue Status, Citi-ShIssue:CurrIssDueDate, Citi-CAP:Issue Source,Citi-CAP:Days in Awaiting Validation Status"/>
+			<attribute name="disable.trigger" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/trigger/Disable CAP Change Counter Update Trigger" />
+			<attribute name="log.filename" value="ChangeCounterRule.log" />
+		</rule>
+		<eventHandler class="com.ibm.openpages.ext.trigger.icaps.handler.CAPChangeCounterHandler">
+			<attribute name="log.enable.debug.mode" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/enable_debug_mode" />
+			<attribute name="log.file.path" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_path_cap_count" />
+			<attribute name="log.file.size" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_size" />
+			<attribute name="log.level" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_level" />
+		</eventHandler>
+	</grcTrigger>
+	​
+	<grcTrigger name ="Push to iCAPS - Audit Issue parse the iCAPS response" event = "update.object" position = "POST">
+		<rule class="com.ibm.openpages.ext.trigger.icaps.rule.CertainFieldsChangeRule">
+			<attribute name = "content.type" value="Citi_CAP" />
+			<attribute name = "fields" value="Citi-iCAPSCAP:iCAPSResponse"/>
+			<attribute name = "disable.trigger" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/trigger/Disable CAP iCAPS Response Trigger" />
+			<attribute name = "log.filename" value="ParseICAPSResponse.log" />
+		</rule>
+		<eventHandler class = "com.ibm.openpages.ext.trigger.icaps.handler.CAPParseICAPSResponseHandler">
+			<attribute name="log.enable.debug.mode" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/enable_debug_mode" />
+			<attribute name="log.file.path" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_path_cap_parse" />
+			<attribute name="log.file.size" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_file_size" />
+			<attribute name="log.level" value="/OpenPages/Custom Deliverables/Interfaces/iCAPS/outbound/Audit Issues/logs/log_level" />
+		</eventHandler>
+	</grcTrigger>
+	​
+</trigger-definitions>

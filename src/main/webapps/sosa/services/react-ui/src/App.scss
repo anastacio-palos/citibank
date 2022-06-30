@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ *
+ * OpenPages GRC Platform (PID: 5725-D51)
+ *
+ * © Copyright IBM Corporation  2021 - CURRENT_YEAR. All Rights Reserved.
+ *
+ * US Government Users Restricted Rights- Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ *******************************************************************************/
+@import './vars.scss';
+@import 'react-notifications/lib/notifications.css';
+
+h1 {
+  font-weight: bold;
+  margin-bottom: $spacing-02;
+}
+
+.example-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.myGrid {
+  flex: 1 1 0px;
+  width: 100%;
+}
+
+.bx--toggle-input__label .bx--toggle__switch {
+  margin-top: .5rem !important
+}

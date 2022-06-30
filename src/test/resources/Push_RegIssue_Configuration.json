@@ -1,0 +1,34 @@
+{
+  "name": "Regulatory Issue",
+  "fields": [
+    {
+      "mapTo": "Issue iCAPS Issue ID",
+      "source": {
+        "name": "name",
+        "kind": "grcobject.name"
+      }
+    },
+    {
+      "mapTo": "Issue Validation In IA",
+      "source": {
+        "name": "Citi-Iss:Status",
+        "kind": "grcobject.field"
+      }
+    },
+    {
+      "mapTo": "Issue Heading",
+      "type": "IssueHeading",
+      "source": {
+        "kind": "grcobject"
+      }
+    },
+    {
+      "mapTo": "ListOfCaps",
+      "type": "Cap",
+      "source": {
+        "name": "Citi_CAP",
+        "kind": "grcobject.children"
+      }
+    }
+  ]
+}

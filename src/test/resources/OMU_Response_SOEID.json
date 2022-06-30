@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "node": {
+        "keyId": "000071164412706IE",
+        "msOrgType": "MS",
+        "manSegmentId": "12706",
+        "manGeoId": "IE",
+        "resOrgMgrGeid": "0000711644",
+        "hrGenId": null,
+        "primaryMgr": null,
+        "coheadMgr": null,
+        "orgGrpMgr": null,
+        "effDt": "07-02-2019",
+        "endDt": "12-31-9999",
+        "lastUpdoprId": "WDAY",
+        "lastUpdtDwEttm": "07-20-2019 01:08:37",
+        "activeInd": "A",
+        "createdBy": "SYSTEM",
+        "createdDate": "03-11-2021",
+        "lastEditedBy": "SYSTEM",
+        "lastEditedDate": "03-11-2021",
+        "soeId": "CK08395",
+        "employeeStatus": "A",
+        "uniqueKey": "0000711644"
+      },
+      "changeHistory": [
+        {
+          "changeLogId": 244,
+          "manSegmentId": "12706",
+          "manGeoId": "IE",
+          "resOrgMgrGeid": "0000711644",
+          "changeType": "ADDED",
+          "oldValue": null,
+          "newValue": null,
+          "lastEditedDate": "03-11-2021"
+        }
+      ]
+    },
+    {
+      "node": {
+        "keyId": "0001726264167461000",
+        "msOrgType": "MS",
+        "manSegmentId": "16746",
+        "manGeoId": "1000",
+        "resOrgMgrGeid": "0001726264",
+        "hrGenId": null,
+        "primaryMgr": null,
+        "coheadMgr": null,
+        "orgGrpMgr": null,
+        "effDt": "07-02-2019",
+        "endDt": "12-31-9999",
+        "lastUpdoprId": "WDAY",
+        "lastUpdtDwEttm": "07-20-2019 01:08:37",
+        "activeInd": "A",
+        "createdBy": "SYSTEM",
+        "createdDate": "03-11-2021",
+        "lastEditedBy": "SYSTEM",
+        "lastEditedDate": "03-11-2021",
+        "soeId": "DJ11078",
+        "employeeStatus": "A",
+        "uniqueKey": "0001726264"
+      },
+      "changeHistory": [
+        {
+          "changeLogId": 374,
+          "manSegmentId": "16746",
+          "manGeoId": "1000",
+          "resOrgMgrGeid": "0001726264",
+          "changeType": "ADDED",
+          "oldValue": null,
+          "newValue": null,
+          "lastEditedDate": "03-11-2021"
+        }
+      ]
+    }
+  ],
+  "message": null,
+  "success": true
+}

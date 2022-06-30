@@ -1,0 +1,102 @@
+{
+  "name": "ICapsNewCAP",
+  "fields": [
+    {
+      "name": "CAP_ID",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-Cap:Name"
+    },
+    {
+      "name": "CAP_Description",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-CAP:APDescription"
+    },
+    {
+      "name": "CAP_Status",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-CAP:ICAPSts"
+    },
+    {
+      "name": "Action_Plan_Number",
+      "defaultValue": "1",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[0-9]*$"
+      },
+      "mapTo": "Citi-CAP:Action Plan Number"
+    },
+    {
+      "name": "CAP_DSMT_Assigned_Managed_Segment_Attributes",
+      "mapTo": "Citi-iCAPSCAP:iCAPSDSMTManagedSegment"
+    },
+    {
+      "name": "CAP_Owner",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^[a-zA-Z0-9_\\s]*$"
+      },
+      "mapTo": "Citi-CAP:Assignee"
+    },
+    {
+      "name": "CAP_Coordinators",
+      "mapTo": "Citi-iCAPSCAP:iCAPSCoordinators"
+    },
+    {
+      "name": "CAP_Create_Date",
+      "mapTo": "Citi-iCAPSCAP:iCAPSCreateDate"
+    },
+    {
+      "name": "CAP_Activation_Date",
+      "mapTo": "Citi-iCAPSCAP:iCAPSActivationDate"
+    },
+    {
+      "name": "CAP_Business_Target_Date",
+      "restriction": {
+        "minLength": "1",
+        "pattern": "^((0?[1-9]|[12][0-9]|3[01])\\-([A-Z]{3})\\-\\d{2})|([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1]) (2[0-3]|[01][0-9]):[0-5][0-9]:[0-5][0-9])$"
+      },
+      "mapTo": "Citi-iCAPSCAP:iCAPSBusTargetDate"
+    },
+    {
+      "name": "Revised_CAP_Business_Target_Date",
+      "mapTo": "Citi-iCAPSCAP:iCAPSRevBusTargetDate"
+    },
+    {
+      "name": "CAP_Completion_Date",
+      "mapTo": "Citi-CAP:CAP Completion Date"
+    },
+    {
+      "name": "CAP_Due_Date",
+      "mapTo": "Citi-CAP:Due Date"
+    },
+    {
+      "name": "Planning_CAP",
+      "mapTo": "Citi-CAP:Action Plan Type"
+    },
+    {
+      "name": "CAP_Validation_Required",
+      "mapTo": "Citi-iCAPSCAP:iCAPValReq"
+    },
+    {
+      "name": "CAP_Number_of_Validation_Days",
+      "mapTo": "Citi-iCAPSCAP:NumValDays"
+    },
+    {
+      "name": "CAP_Comment",
+      "mapTo": "Citi-CAP:ActCom"
+    },
+    {
+      "name": "CAP Business Completion Date",
+      "mapTo": "Citi-iCAPSCAP:BusComplDate"
+    }
+  ]
+}
